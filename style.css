@@ -1,0 +1,156 @@
+body p , h1, h2, h3, h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+#container {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.box {
+    width: 30vw;
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+    cursor: pointer;
+    border: 1.5px solid gray;
+    }
+.box .select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.customize-item {
+    display: none;
+}
+.box.active .customize-item {
+    display: flex;
+    justify-content: start;
+    align-items: bottom;
+    margin-top: 10px;
+}
+.item-count {
+    margin:auto 10px 7px 0px;
+}
+.select-group {
+    display: flex;
+    flex-direction: column;   
+    row-gap: 8px;
+}
+.box-select {
+    padding: 5px;
+    width: 100px;
+}
+.active {
+    border: 2.5px solid rgba(227, 50, 133, 0.995);
+}
+.box.active .select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    column-gap: 12px;
+}
+.cart-title {
+    display: flex;
+    align-items: center;
+    width: 33vw;
+    color: rgba(227, 50, 133, 0.995);
+}
+.line {
+    flex: 1;
+    background-color: rgb(189, 190, 190);
+    height: 1.5px;
+}
+
+.billing-amount {
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(227, 50, 133, 0.995);
+    font-size: larger;
+    font-weight: bold;
+}
+.icon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.add-to-cart{
+    margin-top: 20px;
+    width: 33vw;
+    height: 50px;
+    background-color: rgba(227, 50, 133, 0.995);
+    color: white;
+    cursor: pointer;
+}
+.unit{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.unit-heading-container{
+    display: flex;
+}
+.unit-title-container{
+    display: flex;
+    flex-direction: column;
+}
+.unit-title-container p {
+    margin: 0px;
+}
+.unit-title{
+    display: flex;
+    column-gap: 15px;
+    padding: 5px 0px;
+}
+.unit-name{
+    font-size: larger;
+    font-weight: bold;
+}
+.offer {
+    background-color: rgba(227, 50, 133, 0.995);
+    padding: 3px;
+    color: white;
+}
+
+.radio-button {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.offer-price {
+    font-size: larger;
+    font-weight: bold;
+}
+.actual-price {
+    text-decoration: line-through;
+    color: gray;
+}
+.box-radio{
+    transform: scale(1.5);
+}
+.box-radio:checked {
+    background-color: red;
+}
+.options{
+    margin-left: 45px;
+}
+.popular-tag{
+        width: 124px;
+        background: rgba(227, 50, 133, 0.995) !important;;
+        color: white;
+        position: relative;
+        float: right;
+        bottom: 28px;
+        padding: 6px;
+        font-size: large;
+        font-weight: bold;
+}
